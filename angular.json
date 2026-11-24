@@ -40,7 +40,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": { "port": 4207 },
+          "options": { "proxyConfig": "proxy.conf.mjs", "port": 4207 },
           "configurations": {
             "production": { "buildTarget": "noah-crm:build:production" },
             "development": { "buildTarget": "noah-crm:build:development" }
